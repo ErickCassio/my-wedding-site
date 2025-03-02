@@ -4,35 +4,20 @@ import arcWithLetters from "../assets/images/E&E_img.png";
 function Home() {
   return (
     <div className="relative h-screen sm:flex sm:min-h-screen">
-      {/* Bloco Esquerdo: fundo escuro + foto circular */}
+      {/* Bloco Esquerdo: fundo escuro */}
       <div className="h-[30%] sm:h-full bg-[#090E14] sm:w-[30%] flex flex-col items-center justify-center">
-        {/* Texto sobre a foto circular e espaço pra alinhar a foto */}
-        <div className="bg-[#090E14] h-48 sm:h-0"></div>
-        {/* Circulo detrás da foto */}
-        <div className="absolute top-14 sm:hidden z-10 overflow-hidden h-[8.5em] sm:h-[17em] w-[17em] sm:w-[8.5em]">
-          <div className="bg-[#717171] rounded-full h-[17em] w-[17em]">
-            {/* A imagem ou conteúdo dentro do círculo */}
-          </div>
-        </div>
-        {/* Foto circular */}
-        <div className="absolute sm:hidden -bottom-8 sm:top-0 z-10 rounded-full overflow-hidden h-64 w-64">
-          <img
-            src={HomeImg}
-            alt="Casal sorrindo, segurando balão em formato de coração e buquê de flores azuis"
-            className="object-cover w-full h-full"
-          />
-        </div>
+        {/* Conteúdo específico para esse bloco, se houver */}
       </div>
 
       {/* Bloco Direito: foto como background + overlay + texto */}
       <div className="h-[70%] sm:h-full sm:relative sm:w-[70%]">
-        {/* Circulo detrás da foto */}
+        {/* Circulo detrás da foto (somente em telas sm+) */}
         <div className="hidden sm:block sm:absolute top-1/2 transform -translate-y-1/2 sm:-left-[9.5rem] lg:-left-[10.5rem] overflow-hidden z-10 sm:h-[19rem] sm:w-[9.5rem] lg:h-[21rem] lg:w-[10.5rem]">
           <div className="bg-[#717171] rounded-full sm:h-[19rem] sm:w-[19rem] lg:h-[21rem] lg:w-[21rem]">
-            {/* A imagem ou conteúdo dentro do círculo */}
+            {/* Conteúdo do círculo */}
           </div>
         </div>
-        {/* Foto circular ajustada para diversos tamanhos de tela */}
+        {/* Resto do conteúdo do bloco direito */}
         <div className="hidden sm:block sm:absolute top-1/2 transform -translate-y-1/2 sm:-left-36 lg:-left-40 z-10 rounded-full overflow-hidden sm:h-72 sm:w-72 lg:h-80 lg:w-80">
           <img
             src={HomeImg}
@@ -40,24 +25,20 @@ function Home() {
             className="object-cover w-full h-full"
           />
         </div>
-
-        {/* Imagem de fundo */}
         <div className="relative h-full">
           <div className="absolute z-1 h-full sm:h-[100%] w-full overflow-hidden flex justify-center items-center">
-            {/* Overlay para escurecer a imagem */}
             <div className="absolute inset-0 bg-black/70 z-10"></div>
             <img
               src={HomeImg}
               alt="Casal sorrindo, segurando balão em formato de coração e buquê de flores azuis"
               className="
-              object-cover    /* Faz a imagem preencher todo o espaço */
-              object-center   /* Centraliza o foco da imagem */
-              w-full         /* Largura automática, para não distorcer */
-              h-full         /* Altura automática, para não distorcer */
-              min-w-full     /* Garante que, no mínimo, ocupe toda a largura do container */
-              min-h-full     /* Garante que, no mínimo, ocupe toda a altura do container */
-              
-              sm:scale-110      /* Aumenta um pouco a imagem para ficar maior que o container */
+              object-cover
+              object-center
+              w-full
+              h-full
+              min-w-full
+              min-h-full
+              sm:scale-110
             "
             />
           </div>
@@ -71,7 +52,6 @@ function Home() {
               <h1>Emily Clemes</h1>
               <h1>& Erick Ribeiro</h1>
             </div>
-
             <div className="flex items-center space-x-2 ps-2 font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -87,13 +67,26 @@ function Home() {
                   d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
                 />
               </svg>
-
               <p className="text-white text-sm sm:text-lg">
                 22 de Março de 2025
               </p>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Arco para mobile: exibe a metade superior do círculo 1rem maior que a imagem */}
+      <div className="absolute sm:hidden left-1/2 bottom-[70%] -translate-x-1/2 z-0 overflow-hidden w-[17rem] h-[8.5rem]">
+        <div className="bg-[#717171] rounded-full w-[17rem] h-[17rem]" />
+      </div>
+
+      {/* Imagem circular para mobile, sobrepondo metade na div 30% e metade na div 70% */}
+      <div className="absolute sm:hidden top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 rounded-full overflow-hidden h-64 w-64">
+        <img
+          src={HomeImg}
+          alt="Casal sorrindo, segurando balão em formato de coração e buquê de flores azuis"
+          className="object-cover w-full h-full"
+        />
       </div>
     </div>
   );
