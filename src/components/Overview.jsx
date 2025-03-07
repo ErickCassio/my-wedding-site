@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import casalCoracao from "../assets/images/casal_coracao.png";
+import decoracaoOverview from "../assets/images/decoracao_overview.png";
 
 const Overview = () => {
   // Estado para armazenar dias, horas e minutos restantes
@@ -33,12 +35,18 @@ const Overview = () => {
   return (
     <div className="flex flex-col justify-center items-center space-y-2">
       {/* Cabeçalho */}
-      <div className="flex pt-4 space-x-2 montecarlo-font text-4xl">
+      <div className="flex justify-center items-center pt-4 space-x-2 montecarlo-font text-4xl">
         <h1>Dá pra ver</h1>
-        <img src="" alt="" />
+        <img src={casalCoracao} alt="" className="h-24 w-24" />
         <h1>pelo olhar...</h1>
       </div>
-      <img src="" alt="" />
+      <div className="w-48 overflow-hidden max-w-3xs">
+        <img
+          src={decoracaoOverview}
+          alt=""
+          className="mx-auto w-full h-10 object-cover"
+        />
+      </div>
       <h3 className="montecarlo-font text-center text-2xl tracking-wider px-8 py-2">
         Estamos apaixonados, e nosso grande dia está próximo!
       </h3>

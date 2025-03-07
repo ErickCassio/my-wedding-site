@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import carouselOne from "../assets/images/carousel_one.jpg";
 import carouselTwo from "../assets/images/carousel_two.jpg";
 import carouselThree from "../assets/images/carousel_three.jpg";
