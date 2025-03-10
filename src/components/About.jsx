@@ -14,15 +14,15 @@ function About() {
     },
     {
       image: carouselTwo,
-      title: "Título do Segundo Slide",
+      title: "Apesar de sermos parecidos, não, nós não somos irmãos!!!",
       description:
-        "Descrição do segundo slide. Texto ilustrativo para mostrar a alternância de conteúdo.",
+        "Tivemos que atravessar o oceano para que aqui em Portugal viver um conto de amor verdadeiro, e assim se tornar uma só carne!",
     },
     {
       image: carouselThree,
-      title: "Título do Terceiro Slide",
+      title: "É biscoito ou bolacha? 💕",
       description:
-        "Descrição do terceiro slide. Mais detalhes e curiosidades sobre a história do casal.",
+        "Não importa! O que realmente importa é que, mesmo com as diferenças entre um nordestino e uma paulista, tudo se encaixa de um jeito único e especial. No fim, é o amor que dá o verdadeiro sabor a essa história, provando que as diferenças só tornam tudo mais mágico!",
     },
   ];
 
