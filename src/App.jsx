@@ -4,6 +4,7 @@ import Overview from "./components/Overview.jsx";
 import About from "./components/About.jsx";
 import Ceremony from "./components/Ceremony.jsx";
 import Honeymoon from "./components/Honeymoon.jsx";
+import Live from "./components/Live.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <About />
         <Ceremony />
         <Honeymoon />
+        <Live />
       </div>
     </>
   );
