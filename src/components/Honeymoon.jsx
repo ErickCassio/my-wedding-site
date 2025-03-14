@@ -90,8 +90,8 @@ function Honeymoon() {
           />
         </div>
       </div>
-      <div className="quicksand-font pt-4 ps-2 md:ps-8 max-w-sm sm:max-w-md md:max-w-xl">
-        <p>
+      <div className="quicksand-font pt-4 flex justify-center items-center ps-2 md:ps-8 max-w-sm sm:max-w-md md:max-w-xl">
+        <p className="px-6">
           Sua contribuição ajudará a transformar nossos sonhos em realidade.
           Agradecemos de coração por fazer parte da nossa história de amor.
         </p>
