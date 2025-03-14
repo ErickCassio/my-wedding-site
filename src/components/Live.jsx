@@ -1,13 +1,18 @@
 function Live() {
   const openYouTube = () => {
-    // Replace this with your channel ID or URL
+    // Replace this with your channel URL
     const channelUrl = "https://www.youtube.com/@emilyclemes8493";
-    // For deep linking to the YouTube app, you can try "youtube://"
-    // Note: This may work only if the app is installed.
+    // For deep linking: try using "youtube://" or "vnd.youtube://" based on your needs
     const mobileDeepLink = "youtube://www.youtube.com/@emilyclemes8493";
 
-    if (/Mobi|Android/i.test(navigator.userAgent)) {
-      // On mobile, try deep linking first
+    if (/Android/i.test(navigator.userAgent)) {
+      // Direct redirection for Android with timeout fallback
+      window.location.href = mobileDeepLink;
+      setTimeout(() => {
+        window.location.href = channelUrl;
+      }, 2000);
+    } else if (/Mobi|Android/i.test(navigator.userAgent)) {
+      // Other mobile devices try deep link first
       window.open(mobileDeepLink, "_blank") ||
         window.open(channelUrl, "_blank");
     } else {

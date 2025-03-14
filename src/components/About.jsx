@@ -93,10 +93,10 @@ function About() {
       </div>
       {/* Seção de texto que acompanha o slide */}
       <div className="flex flex-col items-center justify-center text-center space-y-5">
-        <h2 className="montecarlo-font text-3xl">
+        <h2 className="montecarlo-font text-3xl px-4">
           {slides[currentSlide].title}
         </h2>
-        <p className="quicksand-font px-10 sm:px-32 md:px-48 lg:px-80">
+        <p className="quicksand-font px-8 sm:px-32 md:px-48 lg:px-80">
           {slides[currentSlide].description}
         </p>
       </div>

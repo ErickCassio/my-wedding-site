@@ -21,7 +21,7 @@ function Honeymoon() {
           Chave pix copiado!
         </div>
       )}
-      <h1 className="montecarlo-font text-4xl pb-4">
+      <h1 className="montecarlo-font text-4xl pb-4 px-5 text-center">
         Contribua para Nossa Lua de Mel
       </h1>
       <div className="bg-white flex flex-col justify-center items-center quicksand-font rounded-4xl p-4">

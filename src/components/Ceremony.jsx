@@ -35,7 +35,13 @@ function Ceremony() {
           <img
             src={map}
             alt=""
-            className="h-48 w-72 lg:h-52 lg:w-80 border-2 border-[#E8F6FF]"
+            className="h-48 w-72 lg:h-52 lg:w-80 border-2 border-[#E8F6FF] cursor-pointer"
+            onClick={() => {
+              window.open(
+                "https://www.google.com/maps/place/Igreja+Videira+Viana+do+Castelo+%7C+Igreja+em+c%C3%A9lulas/@41.6953625,-8.8314366,16.99z/data=!4m10!1m2!2m1!1sigreja+videira!3m6!1s0xd25b76131d726b5:0xed24b13031cdb9ae!8m2!3d41.6951987!4d-8.8281734!15sCg5pZ3JlamEgdmlkZWlyYSIDiAEBkgESZXZhbmdlbGljYWxfY2h1cmNo4AEA!16s%2Fg%2F11qh69vcdh?entry=ttu&g_ep=EgoyMDI1MDMxMS4wIKXMDSoASAFQAw%3D%3D",
+                "_blank"
+              );
+            }}
           />
         </div>
       </div>
