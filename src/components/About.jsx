@@ -16,7 +16,7 @@ function About() {
       image: carouselTwo,
       title: "Apesar de sermos parecidos, não, nós não somos irmãos!!!",
       description:
-        "Tivemos que atravessar o oceano para que aqui em Portugal viver um conto de amor verdadeiro, e assim se tornar uma só carne!",
+        "Tivemos que atravessar o oceano para aqui em Portugal viver um conto de amor verdadeiro, e assim se tornar uma só carne!",
     },
     {
       image: carouselThree,

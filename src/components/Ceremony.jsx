@@ -1,6 +1,6 @@
 import leaves from "../assets/images/leaves.jpg";
 import map from "../assets/images/mapa.png";
-import calendar from "../assets/images/calendário.png";
+import calendar from "../assets/images/calendar.png";
 
 function Ceremony() {
   return (
